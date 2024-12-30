@@ -1,7 +1,6 @@
 import styles from './creteForm.module.css';
 import {useFormData} from "../../hooks/useForm.ts";
 import {SubmitHandler, useForm} from "react-hook-form";
-import * as React from "react";
 
 type FormValues = {
     title: string;
@@ -55,7 +54,6 @@ export function CreateForm () {
                         required: "Цена обязательна",
                         pattern: { value: /^[0-9]+(\.[0-9]{1,2})?$/, message: "Введите корректную цену (например, 10.99)" },
                         min: { value: 1, message: "Цена должна быть больше 0" },
-                        valueAsNumber: true
                     })}
                     type='number'
                     value={formData.price}
