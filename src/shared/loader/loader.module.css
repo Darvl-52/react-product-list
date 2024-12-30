@@ -1,0 +1,53 @@
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blob {
+    width: 112px;
+    height: 112px;
+    display: grid;
+    background: #fff;
+    filter: blur(6px) contrast(10);
+    padding: 11px;
+    mix-blend-mode: darken;
+}
+
+.blob:before,
+.blob:after {
+    content: "";
+    grid-area: 1/1;
+    width: 45px;
+    height: 45px;
+    background: #474bff;
+    animation: blob-rhf26m 2s infinite;
+}
+
+.blob:after {
+    animation-delay: -1s;
+}
+
+@keyframes blob-rhf26m {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(100%, 0);
+    }
+
+    50% {
+        transform: translate(100%, 100%);
+    }
+
+    75% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+

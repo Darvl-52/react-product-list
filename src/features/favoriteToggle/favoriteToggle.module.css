@@ -1,0 +1,16 @@
+.favoriteButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    background-color: var(--color-blue);
+    padding: 16px;
+    border-radius: var(--border-radius-small);
+    color: var(--color-white);
+}
+
+@media (max-width: 394px) {
+    .favoriteButton {
+        font-size: 0.75rem;
+    }
+}

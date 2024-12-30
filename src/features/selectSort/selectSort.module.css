@@ -1,0 +1,7 @@
+.select {
+    padding: 8px 12px;
+    border-width: 1px;
+    border-radius: 6px;
+    outline: 2px solid transparent;   
+    outline-offset: 2px;
+}

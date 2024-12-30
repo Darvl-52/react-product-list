@@ -1,0 +1,99 @@
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    border-radius: var(--border-radius-medium);
+    padding: 24px;
+    max-width: 330px;
+    background-color: #FBFCFF;
+    transition-duration: var(--transition-duration);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.img {
+    border-radius: var(--border-radius-medium);
+}
+
+.title {
+    position: relative;
+    font-family: 'Merriweather Medium', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.price {
+    margin-top: 8px;
+    font-size: 0.875rem;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+.delete {
+    margin-top: 15px;
+}
+
+@media (max-width: 425px) {
+    .card {
+        grid-template-columns: 1fr;
+        padding: 16px;
+        max-width: 100%;
+        column-gap: 12px;
+    }
+
+    .button {
+        top: 6px;
+        right: 0;
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .price {
+        font-size: 0.85rem;
+    }
+
+    .delete {
+        margin-top: 12px;
+    }
+}

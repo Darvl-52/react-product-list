@@ -1,0 +1,24 @@
+.products {
+    margin-top: 70px;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+@media (max-width: 769px) {
+    .list {
+        justify-content: center;
+    }
+}
+
+.sort {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 50px;
+}
