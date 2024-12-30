@@ -1,6 +1,7 @@
 {
   "name": "product-shop",
   "private": true,
+  "homepage": "https://Darvl-52.github.io/react-product-list",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
